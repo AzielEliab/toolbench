@@ -1,0 +1,15 @@
+ToolBench (TOOLBENCH-0.1)
+Copyright 2026 Aziel Eliab
+
+Licensed under the Apache License, Version 2.0 (the "License").
+You may obtain a copy of the License in the LICENSE file or at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Forks are always allowed. You may fork, modify, and redistribute this work
+under the Apache License, Version 2.0. No additional permission is required
+to create a fork.
+
+This distribution vendors a suite-scoped snapshot of FragGate kind rows from
+AzielEliab/aziel-runtime (src/fraggate/registry.js). That neighbor remains
+under its own Apache-2.0 terms. Author identity is Aziel Eliab only.

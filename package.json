@@ -1,0 +1,53 @@
+{
+  "name": "toolbench",
+  "version": "0.1.0",
+  "description": "TOOLBENCH-0.1 — standalone deterministic 8-case FragGate refuse benchmark. Self-test is not a third-party lab. Author Aziel Eliab only.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Aziel Eliab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzielEliab/toolbench.git"
+  },
+  "homepage": "https://github.com/AzielEliab/toolbench",
+  "bugs": {
+    "url": "https://github.com/AzielEliab/toolbench/issues"
+  },
+  "keywords": [
+    "toolbench",
+    "fraggate",
+    "refuse",
+    "benchmark"
+  ],
+  "bin": {
+    "toolbench": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test --test-concurrency=1 test/*.test.ts",
+    "toolbench": "tsx src/cli.ts",
+    "pack": "node workers/download-tracker/scripts/pack-archive.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
